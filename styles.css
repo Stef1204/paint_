@@ -1,22 +1,22 @@
 styles.css
 body {
-    font-family: 'Sevillana', cursive;
-    margin: 2;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #f9f7f7, #e1e1e1);
-    color: #043E52;
+    color: #333;
 }
 
 header {
-    background-color: #043E52;
-    padding: 3em;
+    background-color: #ffcccb;
+    padding: 1em;
     text-align: center;
 }
 
-header .logo-image {
-    max-width: 200%;
-    height: auto;
-    width: 200px;
+header h1 {
+    color: #6a0572;
+    font-size: 2.5em;
+    margin: 0;
 }
 
 nav ul {
@@ -32,26 +32,21 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #e16a3d;
+    color: #6a0572;
     font-weight: bold;
-    font-size: 1.5em;
 }
 
 #hero {
-    background-image: url('acuarelawater.jpg');
-    font-family: 'Sevillana', cursive;
+    background-image: url('watercolor-background.jpg');
     background-size: cover;
     background-position: center;
     padding: 5em 1em;
     text-align: center;
-    color: #FFA45D;
+    color: #fff;
 }
 
 #hero h2 {
-    font-size: 5em;
-  font-family: 'Sevillana',cursive;
-  font-weight: 200;
-  font-style: normal;
+    font-size: 2.5em;
 }
 
 section {
@@ -59,82 +54,29 @@ section {
 }
 
 #about {
-    background-color: #ffffff;
-    color: #043E52;
-    font-size: 2em;
+    background-color: #f4effd;
+    color: #6a0572;
 }
 
 #gallery {
-    background-color: #ffffff;
-    color: #DC7E6F;
-    font-size: 2em;
+    background-color: #fff0f6;
+    color: #6a0572;
 }
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(1, 4fr);
-    gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
 }
 
 .gallery-grid img {
     width: 100%;
-    border-radius: 100px;
-}
-
-#videos {
-    padding: 3em;
-    background-color: #f9f9f9;
-    text-align: center; /* Centra el texto del encabezado */
-}
-
-#videos h2 {
-    text-align: center;
-    color: #E16A3D;
-    margin-bottom: 1em;
-    font-family: 'Sevillana', cursive;
-    font-size: 3em
-}
-
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 2fr); /* Dos columnas por fila */
-    gap: 3em; /* Espacio entre videos */
-    justify-content: center; /* Centrar la cuadrícula */
-}
-
-.video-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-video {
-    width: 80%; /* Asegura que el video ocupe todo el ancho del contenedor */
-    height: auto; /* Mantiene la relación de aspecto del video */
+    border-radius: 8px;
 }
 
 #contact {
-    background-color: #ffffff;
-    color: #043E52;
-
-}
-
-#contact h2 {
-    font-size: 3em; /* Tamaño de fuente del encabezado */
-    color: #043E52; /* Color del texto */
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 0.5em; /* Espacio debajo del encabezado */
-    font-family: 'Sevillana', cursive; /* Fuente personalizada */
-}
-
-#contact p {
-    font-size: 2em; /* Tamaño de fuente del párrafo */
-    color: #DC7E6F; /* Color del texto */
-    text-align: center; /* Centrar el texto */
-    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
-    margin: 0 auto 1.5em auto; /* Margen automático para centrar */
-    max-width: 800px; /* Ancho máximo del párrafo */
-    font-family: 'Sevillana', cursive; /* Fuente personalizada */
+    background-color: #f4effd;
+    color: #6a0572;
 }
 
 form label {
@@ -153,7 +95,7 @@ form input, form textarea {
 
 form button {
     padding: 0.5em 1em;
-    background-color: #FFA45D;
+    background-color: #6a0572;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -161,7 +103,7 @@ form button {
 }
 
 form button:hover {
-    background-color: ##FFA45D;
+    background-color: #8c0aa3;
 }
 
 footer {
@@ -170,10 +112,3 @@ footer {
     background-color: #ffcccb;
     color: #6a0572;
 }
-
-@font-face {
-    font-family: 'Sevillana-Regular';
-    src: url('Sevillana-Regular') format('woff2'),
-         url('Sevillana-Regular') format('woff');
-    font-weight: normal;
-    font-style: normal;
